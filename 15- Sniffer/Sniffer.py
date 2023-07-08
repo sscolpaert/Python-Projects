@@ -6,7 +6,7 @@ sniffer = socket.socket(socket.AF_INET,socket.SOCK_RAW,socket.IPPROTO_IP) # cons
  
 sniffer.bind((host,0))
  
-sniffer.setsockopt(socket.IPPROTO_IP,socket.IP_HDRINCL,1) # captura o cabeçalho IP dos cabeçalhos
+sniffer.setsockopt(socket.IPPROTO_IP,socket.IP_HDRINCL,1) # captura o IP
  
 sniffer.ioctl(socket.SIO_RCVALL,socket.RCVALL_ON) # Para Windows
  
